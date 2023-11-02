@@ -3,11 +3,11 @@
 
 /**
  *string_nconcat - concatenates two string
- *@s1: pointer to first string
+ *@s1: pointer to first string.
  *@s2: pointer to 2nd string.
- *@n: Number of bytes from n2 to concatenate
+ *@n: Number of bytes from n2 to concatenate.
  *
- * Return: pointer to space in memory containing concatenated string.
+ * Return:pointer to space in memory containing concatenated string.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -23,7 +23,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (s1_length = 0; s1[s1_length] != '\0'; s1_length++)
 		;
-	for (s2_length + 0; s2[s2_length] != '\0'; s2_length++)
+	for (s2_length = 0; s2[s2_length] != '\0'; s2_length++)
 		;
 	/*memory reservation-for case 1 & 2.*/
 	str = malloc(s1_length + n + 1);
