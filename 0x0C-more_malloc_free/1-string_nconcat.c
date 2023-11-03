@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- *string_nconcat - concatenates two string
- *@s1: pointer to first string.
- *@s2: pointer to 2nd string.
- *@n: Number of bytes from n2 to concatenate.
+ * string_nconcat - concatenates two string
+ * @s1: pointer to first string.
+ * @s2: pointer to 2nd string.
+ * @n: Number of bytes from n2 to concatenate.
  *
  * Return:pointer to space in memory containing concatenated string.
  */
@@ -35,7 +35,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (j = 0; j < n; j++)
 	{
 		str[i] = s2[j];
-		i++
+		i++;
 	}
 	str[i] = '\0';
 	return (str);
